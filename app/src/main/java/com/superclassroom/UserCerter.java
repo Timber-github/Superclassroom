@@ -40,9 +40,13 @@ public class UserCerter extends Activity {
         public void onClick(View view) {
             switch (view.getId()){
                 case R.id.courselist:
+                    Intent intent_usercenter_to_schedule = new Intent(UserCerter.this,CourseSchedule.class);
+                    intent_usercenter_to_schedule.putExtra("user_name1",tempname);
+                    startActivity(intent_usercenter_to_schedule);
+                    finish();
                     break;
                 case R.id.roominf:
-                    Intent intent_usercenter_to_classroomactivity = new Intent(UserCerter.this,classroomactivity.class);
+                    Intent intent_usercenter_to_classroomactivity = new Intent(UserCerter.this,ClassroomActivity.class);
                     //Bundle bundle1 = new Bundle();
                    // bundle1.putString("name",tempname);
                     //intent_usercenter_to_classroomactivity.putExtras(bundle1);

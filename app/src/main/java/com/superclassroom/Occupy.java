@@ -5,7 +5,6 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,7 +27,7 @@ public class Occupy extends AppCompatActivity {
     private EditText mOccupyClass;
     private Button mSureOccupy;
     private Button mOccupyBack;
-    private MyDBHelper dbHelper;
+    private ClassroomManager dbHelper;
     private SQLiteDatabase db1;
     private String tmpname;
     private Spinner mStarttime;
@@ -59,7 +58,7 @@ public class Occupy extends AppCompatActivity {
         mSecurity = (EditText) findViewById(R.id.security);
         mOccupyBack.setOnClickListener(m_register_Listener);
         mSureOccupy.setOnClickListener(m_register_Listener);
-        dbHelper = new MyDBHelper(this, "Classroom.db", null, 5);
+        dbHelper = new ClassroomManager(this, "Classroom.db", null, 5);
         db1 = dbHelper.getWritableDatabase();
 
         list1 = new ArrayList<Integer>();
@@ -183,7 +182,7 @@ public class Occupy extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.occupyback:
-                    Intent intent_Occupy_to_roomactivity = new Intent(Occupy.this, classroomactivity.class);
+                    Intent intent_Occupy_to_roomactivity = new Intent(Occupy.this, ClassroomActivity.class);
                     //Bundle bundle1 = new Bundle();
                     //bundle1.putString("name",tmpname);
                     //intent_Occupy_to_roomactivity.putExtras(bundle1);
@@ -224,7 +223,7 @@ public class Occupy extends AppCompatActivity {
                                 break;
                             }
                         }
-                        Intent intent_Occupy_to_roomactivity1 = new Intent(Occupy.this, classroomactivity.class);    //切换Login Activity至User Activity
+                        Intent intent_Occupy_to_roomactivity1 = new Intent(Occupy.this, ClassroomActivity.class);    //切换Login Activity至User Activity
                         //Bundle bundle2 = new Bundle();
                         //bundle2.putString("name",tmpname);
                         //intent_Occupy_to_roomactivity1.putExtras(bundle2);
