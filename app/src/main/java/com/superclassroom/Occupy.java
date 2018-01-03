@@ -48,7 +48,7 @@ public class Occupy extends AppCompatActivity {
 
         Intent i = getIntent();
         tmpname = i.getStringExtra("user_name2");
-//////////
+////////////
 
         mOccupyClass = (EditText) findViewById(R.id.occupyclass);
         mOccupyBack = (Button) findViewById(R.id.occupyback);
