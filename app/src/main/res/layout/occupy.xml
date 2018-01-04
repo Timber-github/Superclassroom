@@ -31,6 +31,7 @@
         android:layout_weight="0.03" />/>
 
 
+
     <LinearLayout
         android:layout_width="400dp"
         android:layout_height="60dp">
@@ -46,11 +47,36 @@
             android:text="请选择时间"
             android:textSize="18.5dp" />
 
-        <Spinner
-            android:id="@+id/starttime"
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"></Spinner>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/round_corner_line_radius_3dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/chooseText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="0"
+                android:textSize="18.5dp" />
+
+            <ImageView
+                android:id="@+id/arrow1"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon" />
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
     <LinearLayout
@@ -60,16 +86,40 @@
         <TextView
             android:layout_width="160dp"
             android:layout_height="60dp"
+
             android:background="@drawable/white_frame"
             android:gravity="center"
             android:text="占用该间教室到"
             android:textSize="18.5dp" />
 
-        <Spinner
-            android:id="@+id/endtime"
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"></Spinner>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/round_corner_line_radius_3dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/chooseText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="0"
+                android:textSize="18.5dp" />
+
+            <ImageView
+                android:id="@+id/arrow2"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <Button
