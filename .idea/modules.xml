@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Superclassroom.iml" filepath="$PROJECT_DIR$/Superclassroom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Superclassroomfeng.iml" filepath="$PROJECT_DIR$/Superclassroomfeng.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

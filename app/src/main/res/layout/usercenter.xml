@@ -4,29 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#CCCC"
+    android:weightSum="1">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="202dp"
+        android:layout_width="match_parent"
         android:layout_height="43dp"
-        android:text="hello"
+        android:text="尊敬的用户，你好!可用功能如下："
+        android:textColor="#0d0303"
+        android:textSize="20dp"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp" />
+
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/courselist"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/white_frame"
         android:text="我的课程表"
-        android:id="@+id/courselist"/>
+        android:textColor="#000000" />
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="教室信息"
-        android:id="@+id/roominf"/>
+        android:textColor="#000000"
+        android:id="@+id/roominf"
+        android:background="@drawable/white_frame"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="解除占用"
-        android:id="@+id/release"/>
+        android:textColor="#000000"
+        android:id="@+id/release"
+        android:background="@drawable/white_frame"/>
 
 </LinearLayout>
