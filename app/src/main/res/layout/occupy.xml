@@ -25,6 +25,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="20dp" />
 
+
     <LinearLayout
         android:layout_width="400dp"
         android:layout_height="60dp"
@@ -40,11 +41,34 @@
             android:textSize="18.5dp"
             android:layout_marginLeft="4dp"/>
 
-        <Spinner
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:id="@+id/starttime"></Spinner>
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/round_corner_line_radius_3dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/chooseText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="0"
+                android:textSize="18.5dp" />
+
+            <ImageView
+                android:id="@+id/arrow1"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon" />
+
+        </LinearLayout>
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,11 +82,33 @@
             android:text="到"
             android:textSize="18.5dp"
             android:gravity="center"/>
-        <Spinner
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:id="@+id/endtime"></Spinner>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/round_corner_line_radius_3dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/chooseText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="0"
+                android:textSize="18.5dp" />
+
+            <ImageView
+                android:id="@+id/arrow2"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon" />
+
+        </LinearLayout>
     </LinearLayout>
 
     <Button
